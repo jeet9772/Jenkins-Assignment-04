@@ -26,13 +26,15 @@ Set up a local SonarQube server and logged in as Administrator, ready to create 
 
 Created a user token (jenkins-token) in SonarQube so Jenkins can push analysis results without using a personal login.
 
-![SonarQube Token](screenshots/sonarqube-token.png)
+<img width="1440" height="900" alt="Screenshot 2026-09-22 at 7 52 50 PM" src="https://github.com/user-attachments/assets/b79930b0-b115-4cab-954d-1ff087172f12" />
+
 
 ### Added the SonarQube token as a Jenkins credential
 
 Stored that token as sonar-token in Jenkins credentials, alongside the GitHub, Slack, and Gmail credentials already set up from earlier assignments, so this pipeline can reuse the same notification setup.
 
-![SonarQube Jenkins Credential](screenshots/sonar-token-credential.png)
+<img width="1440" height="900" alt="Screenshot 2026-09-22 at 7 59 36 PM" src="https://github.com/user-attachments/assets/74f819ad-d272-4711-ad2d-c2a3e8eafe93" />
+
 
 ### Configured the SonarQube server in Jenkins
 
@@ -46,7 +48,8 @@ Stored that token as sonar-token in Jenkins credentials, alongside the GitHub, S
 
 This is what lets the pipeline's `withSonarQubeEnv` step know which server to talk to.
 
-![SonarQube Jenkins Configuration](screenshots/sonarqube-jenkins-config.png)
+<img width="1440" height="900" alt="Screenshot 2026-09-22 at 8 10 59 PM" src="https://github.com/user-attachments/assets/a85bc716-17a3-4134-943b-c93d9e7360c0" />
+
 
 ### Created a webhook in SonarQube pointing back to Jenkins
 
