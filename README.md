@@ -62,6 +62,9 @@ Without this, SonarQube analysis would run but Jenkins would have no way of know
 
 Created a new Pipeline item named `spring3hibernate-ci` with the declarative Jenkinsfile defining all the required stages: code checkout, a parallel block for stability/quality/coverage checks, Quality Gate wait, report generation, a manual input/approval step, and conditional artifact publishing - each notified via Slack and Email.
 
+<img width="1440" height="900" alt="Screenshot 2026-09-22 at 8 59 31 PM" src="https://github.com/user-attachments/assets/40cecad2-e1e0-4883-ba99-0642c6fadebe" />
+
+
 
 ## Full stage view of the pipeline in action
 
