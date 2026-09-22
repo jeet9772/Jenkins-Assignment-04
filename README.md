@@ -55,13 +55,13 @@ This is what lets the pipeline's `withSonarQubeEnv` step know which server to ta
 
 Without this, SonarQube analysis would run but Jenkins would have no way of knowing whether the Quality Gate passed or failed - the pipeline's `waitForQualityGate` step depends entirely on this webhook firing back to `/sonarqube-webhook/`. Last delivery shows success.
 
-![SonarQube Webhook](screenshots/sonarqube-webhook.png)
+<img width="1440" height="900" alt="Screenshot 2026-09-22 at 8 51 58 PM" src="https://github.com/user-attachments/assets/677af66b-72d0-4854-beaa-fce84165eab0" />
+
 
 ## Building the Pipeline Job
 
 Created a new Pipeline item named `spring3hibernate-ci` with the declarative Jenkinsfile defining all the required stages: code checkout, a parallel block for stability/quality/coverage checks, Quality Gate wait, report generation, a manual input/approval step, and conditional artifact publishing - each notified via Slack and Email.
 
-![Pipeline Job Configuration](screenshots/pipeline-job-configuration.png)
 
 ## Full stage view of the pipeline in action
 
