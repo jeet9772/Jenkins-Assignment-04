@@ -72,13 +72,13 @@ This is the clearest picture of the whole pipeline working end to end. The stage
 
 Build history also shows the pipeline being run multiple times with intentional failures (builds #1-9 mostly red) before getting a clean pass (#10 green) - useful for proving the failure-notification path actually works, not just the happy path. The SonarQube Quality Gate for Spring3HibernateApp shows Passed.
 
-![Full Pipeline Stage View](screenshots/pipeline-stage-view.png)
+<img width="975" height="525" alt="650453577-7aa4939d-e786-4c07-8a9c-8f8dcc4978ba-2" src="https://github.com/user-attachments/assets/24659ba6-e725-4d19-8512-2f91b2f6cf96" />
+
 
 ## SonarQube project dashboard after analysis
 
 Confirms the analysis actually ran and pushed real results into SonarQube - bugs, vulnerabilities, code smells, coverage, and duplication numbers for Spring3HibernateApp, with an overall Passed Quality Gate.
 
-![SonarQube Project Dashboard](screenshots/sonarqube-project-dashboard.png)
 
 ## Notifications
 
@@ -86,7 +86,8 @@ Confirms the analysis actually ran and pushed real results into SonarQube - bugs
 
 Each message includes not just the build status but also a Publish Decision field - N/A on the failed builds (since the pipeline never reached the approval stage) and Approve on the successful build #10, where a human actually approved the publish step. This is the part of the pipeline that satisfies the "notify the user post approval/denial" requirement.
 
-![Slack Notifications](screenshots/slack-notifications.png)
+<img width="774" height="601" alt="650453743-acd7006c-d0bf-4e4e-b225-0c455d8d1255" src="https://github.com/user-attachments/assets/49b8f113-1f0c-4c8a-b579-c6a4c14f5f1e" />
+
 
 ### Matching email notifications
 
