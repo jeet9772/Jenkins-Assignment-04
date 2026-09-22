@@ -93,7 +93,8 @@ Each message includes not just the build status but also a Publish Decision fiel
 
 Same information reflected in email - Status and Publish Decision in the subject line, with the full build.log attached to each notification for debugging failed runs without needing to open Jenkins.
 
-![Email Notifications](screenshots/email-notifications.png)
+<img width="1440" height="900" alt="Screenshot 2026-09-22 at 10 26 33 PM" src="https://github.com/user-attachments/assets/3f91ecd4-05b0-428e-a461-bbd1eccaa28d" />
+
 
 ## How the Pipeline Satisfies Each Requirement
 
