@@ -11,7 +11,7 @@ A declarative Jenkins pipeline for the Spring3Hibernate Java project that checks
 
 Needed this so the pipeline can trigger a SonarQube analysis and wait on its Quality Gate result as part of the "code quality analysis" stage.
 
-![Installed SonarQube Scanner Plugin](screenshots/sonarqube-scanner-plugin.png)
+
 
 ### Installed SonarQube and logged in
 
