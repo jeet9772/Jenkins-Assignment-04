@@ -18,7 +18,9 @@ Needed this so the pipeline can trigger a SonarQube analysis and wait on its Qua
 
 Set up a local SonarQube server and logged in as Administrator, ready to create the project that this pipeline will analyze.
 
-![SonarQube Login](screenshots/sonarqube-login.png)
+
+<img width="1440" height="900" alt="Screenshot 2026-09-22 at 7 29 53 PM" src="https://github.com/user-attachments/assets/f9f6d249-6e12-416f-b3e2-c9f13973cce0" />
+
 
 ### Generated a SonarQube token for Jenkins to authenticate with
 
